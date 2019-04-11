@@ -13,5 +13,4 @@ public class Piece {
 	protected Position getPosition() {
 		return position;
 	}
-
 }
