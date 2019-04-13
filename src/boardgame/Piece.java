@@ -11,6 +11,10 @@ public abstract class Piece {
 		position = null;
 	}
 
+	protected Position getPosition() {
+		return position;
+	}
+
 	protected Board getBoard() {
 		return board;
 	}
@@ -25,9 +29,7 @@ public abstract class Piece {
 		boolean[][] mat = possibleMoves();
 		for (int i = 0; i < mat.length; i++) {
 			for (int j = 0; j < mat.length; j++) {
-				if (mat[i][j]) {
-					return true;
-				}
+				return true;
 			}
 		}
 		return false;
